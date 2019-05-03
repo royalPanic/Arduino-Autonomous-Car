@@ -89,7 +89,7 @@ So we can see above in our template code that we're using the `Servo` library in
 To do this, you should first head to [this site](https://bitbucket.org/teckel12/arduino-new-ping/downloads/) and grab the `.zip` of the latest version of the library. After, you're going to want to open up the IDE and navigate to the "Sketch" menu. Once there, you're going to want to go to "Include Library". Continue to "Add .zip Library" Then, navigate to the `.zip` file of the library you just downloaded, and finish the prompt. Now if we return to the "Include Library" dropdown, we see that the `NewPing` library is listed at the bottom of the menu, ready to be used.
 
 ### Using the `NewPing` Library:
-Firstly, we;re going to need to include the library in our code. Doing this is quite simple, all we have to is find the place where the other library is imported, and append `#import <NewPing.h>`.
+Firstly, we're going to need to include the library in our code. Doing this is quite simple, all we have to is find the place where the other library is imported, and append `#include <NewPing.h>`.
 ```c++
 ...
 String readString;
@@ -101,3 +101,50 @@ Servo myservo2;
 ...
 ```
 Now we're ready to go. The `NewPing` library contains a command that will ping way more efficiently than `pingIn`, and will do so reliably. This command, `ping_in`, will virtually replace all instances of `pingIn` to make our code faster and more efficiently.
+
+Our new code will look like this:
+```c++
+#define trigPin 12
+#define echoPin 13
+
+int n;
+int duration, distance;
+
+String readString;
+
+#include <Servo.h>
+#include <NewPing.h>
+Servo myservo1;  // create servo object to control servo
+Servo myservo2;
+
+void setup() {
+  Serial.begin(9600);
+  myservo1.attach(8); // assigns the servo to a pin
+  myservo2.attach(9);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  pinMode(3, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(trigPin, HIGH);
+  _delay_ms(500);
+  digitalWrite(trigPin, LOW);
+  distance = pulse_in(echoPin, HIGH);
+
+  if (distance < 40) { // this is the distance which the rover has to stop
+    digitalWrite(3, HIGH);
+    myservo1.write(n); // controls the direction of the motors
+    myservo2.write(180-n);
+   delay(1000);  // how long the wheels spin
+   myservo1.write(n);
+   myservo2.write(90-n);
+   delay(500);
+}
+  else { // what the rover will do if it doesn't sense anything
+    digitalWrite(3, LOW);
+    myservo1.write(180-n);
+    myservo2.write(n);
+}
+}
+```
