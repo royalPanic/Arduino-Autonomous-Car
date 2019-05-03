@@ -7,8 +7,8 @@ This project was made for the NJSHS STEM class, and is designed to help young pe
 ## Materials You Will Need:
 * A computer with the Arduino IDE (v1.8.5+).
 * An Arduino UNO board.
-* An Arduino "Smart Car" kit, we used [this one](https://www.amazon.com/gp/product/B07F6Z38WM/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1&pldnSite=1).
-* A stepper-motor controller, we used [this one](https://www.amazon.com/gp/product/B01H6VMEFY/ref=ppx_yo_dt_b_asin_title_o00_s01?ie=UTF8&psc=1&pldnSite=1).
+* An Arduino "Smart Car" kit, we used [this one](https://www.amazon.com/gp/product/B07F6Z38WM).
+* A stepper-motor controller, we used [this one](https://www.amazon.com/gp/product/B01H6VMEFY).
 * An ultrasonic sensor, a good one is a generic `HC-SR04` sensor.
 
 ## Assembly of the Kit:
