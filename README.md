@@ -23,6 +23,9 @@ Now obviously this is going to vary by the type of kit you get, but I'll outline
 7. Place the second panel on top of the car and secure using more screws to the spacers.
 8. Flip over the entire chassis and secure the battery pack to the panel with screws and nuts.
 
+## Wiring of the Kit:
+This part, somewhat unsurprisingly, is going to be one of the more difficult parts of the project, seeing as though there were absolutely no instructions provided regarding this step.
+
 ## Coding:
 The code is actually one of the simpler parts of the project, it's easy to make and update, and leaves some room for customization if you know your way around C.
 
