@@ -1,5 +1,5 @@
 # Arduino Autonomous Car Project
-###### By [royal_Panic](https://github.com/royalPanic) & Samarah DeChane
+###### By [royal_Panic](https://github.com/royalP) & Samarah DeChane
 ---
 ## Introduction:
 This project was made for the NJSHS STEM class, and is designed to help young people learn about programming with Arduino and how computer components interact. It uses several different components and enough code to help people grasp some of the basics of C/C++.
@@ -13,7 +13,6 @@ This project was made for the NJSHS STEM class, and is designed to help young pe
 
 ## Assembly of the Kit:
 Now obviously this is going to vary by the type of kit you get, but I'll outline the process of building ours, step by step, as the instructions aren't the best.
-
 1. Remove the protective paper from the chassis and fasteners.
 2. Insert 4 of the fasteners through the large slits bottom of the bottom chassis panel, making sure they stick all the way up.
 3. Place the motors on the inside of the fasteners (towards the center of the chassis) with the axles facing away from each other and parallel to the chassis make sure the holes are lined up.
