@@ -1,5 +1,5 @@
-# Arduino Atonomous Car Project
-###### By royal_Panic & Samarah DeChane
+# Arduino Autonomous Car Project
+###### By [royal_Panic](https://github.com/royalPanic) & Samarah DeChane
 ---
 ## Introduction:
 This project was made for the NJSHS STEM class, and is designed to help young people learn about programming with Arduino and how computer components interact. It uses several different components and enough code to help people grasp some of the basics of C/C++.
@@ -17,7 +17,7 @@ Now obviously this is going to vary by the type of kit you get, but I'll outline
 1. Remove the protective paper from the chassis and fasteners.
 2. Insert 4 of the fasteners through the large slits bottom of the bottom chassis panel, making sure they stick all the way up.
 3. Place the motors on the inside of the fasteners (towards the center of the chassis) with the axles facing away from each other and parallel to the chassis make sure the holes are lined up.
-4. Add the remaining 4 fasteners to the indentations on the outside and push a bolt through each of the holes (from the outside) in the fasteners and motors using nuts to secure them in place
+4. Add the remaining 4 fasteners to the indentations on the outside and push a bolt through each of the holes (from the outside) in the fasteners and motors using nuts to secure them in place.
 5. Line the wheels up on the axles and push them on (they will click when they are secured).
 6. Using a screwdriver attach the metal spacers to the chassis on the corners an between the wheels, they are attached with a screw on each side.
 7. Place the second panel on top of the car and secure using more screws to the spacers.
@@ -25,6 +25,10 @@ Now obviously this is going to vary by the type of kit you get, but I'll outline
 
 ## Wiring of the Kit:
 This part, somewhat unsurprisingly, is going to be one of the more difficult parts of the project, seeing as though there were absolutely no instructions provided regarding this step.
+
+Firstly, let's take a look at the components we're working with:
+### The Arduino UNO Board:
+The Arduino UNO is a consumer microcontroller board that allows you to deploy code on a small prototyping scale with no risk of permanent change or damage, and is best suited for smaller projects like the ones we're doing.
 
 ## Coding:
 The code is actually one of the simpler parts of the project, it's easy to make and update, and leaves some room for customization if you know your way around C.
