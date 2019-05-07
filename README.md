@@ -1,5 +1,5 @@
 # Arduino Autonomous Car Project
-###### By [royal_Panic](https://github.com/royalP) & Samarah DeChane
+###### By [royal_Panic](https://github.com/royalPanic), Samarah DeChane, & [Paige Patz](https://github.com/StardustBot).
 ---
 ## Introduction:
 This project was made for the NJSHS STEM class, and is designed to help young people learn about programming with Arduino and how computer components interact. It uses several different components and enough code to help people grasp some of the basics of C/C++.
@@ -28,6 +28,12 @@ This part, somewhat unsurprisingly, is going to be one of the more difficult par
 Firstly, let's take a look at the components we're working with:
 ### The Arduino UNO Board:
 The Arduino UNO is a consumer microcontroller board that allows you to deploy code on a small prototyping scale with no risk of permanent change or damage, and is best suited for smaller projects like the ones we're doing.
+
+### The Stepper Motor Controller:
+It should be noted that we're not actually using a stepper motor in this project, but we're going to make use of the the system by which this chip controls a bipolar stepper to instead make it control two DC motors. The only problem is that we have four. This is going to need some splicing of wires, but luckily the kit came with 2 2x2 cables, so we don't have to worry too too much about how to splice.
+
+### Generic DC Motor (x4)
+There's really nothing very special or notable about these, negative to negative, positive to positive, apply power, and it spins. We're going to wire all of them up to run off of a single dual motor controller.
 
 ## Coding:
 The code is actually one of the simpler parts of the project, it's easy to make and update, and leaves some room for customization if you know your way around C.
