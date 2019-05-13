@@ -95,12 +95,14 @@ Now, we can look further into how the code works in order to increase its functi
 ### Libraries:
 Let's start with *Libraries*:
 C Libraries are akin to Python Modules. They're extra sets of commands you can choose to import into your code in order to make other things work. If you've worked with Python at all, you can probably instantly recognize some of the most frequently used libraries, and how they're imported.
+
 ```Python
 import time
 import pygame
 import random as r #allows us to use 'r' in place of 'random'. For instance, `random.randint(1,10)` becomes `r.randint(1,10)`.
 from colorama import colorama #allows importing of select commands from a large module.
 ```
+
 C Libraries are remarkably similar, and are imported in a fairly similar fashion, actually. Here's an example of importing 3 libraries I use frequently.
 ```c++
 #import <LiquidCrystal.h>
