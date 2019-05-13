@@ -35,6 +35,11 @@ It should be noted that we're not actually using a stepper motor in this project
 ### Generic DC Motor (x4)
 There's really nothing very special or notable about these, negative to negative, positive to positive, apply power, and it spins. We're going to wire all of them up to run off of a single dual motor controller.
 
+## Wiring Instructions:
+1. First, we're going to need to connect the motors to the motor controller. To do this, we'll need a soldering iron to make some heavier connections. The wires that were shipped with the kit are insulated threaded copper, which means it will be nearly impossible to strip them. We're going to connect a negative and positive wire from each of the ribbon cables to each of the motors on one side, then connect **both** red wires into one of the motor controller ports and **both** black wires into the other on the same side. We'll repeat this for the other set of motors on the other side of the car.
+2. Now we'll see how the motor controller itself needs to be wired to the Arduino board.
+3. To wired the ultrasonic sensor to the Arduino board, we're going to need to keep track of its four pins. We have the **Trigger Pin**, **Echo Pin**, **Grounding Pin** and **5V Input Pin**.
+
 ## Coding:
 The code is actually one of the simpler parts of the project, it's easy to make and update, and leaves some room for customization if you know your way around C.
 
@@ -167,3 +172,5 @@ void loop() {
 }
 }
 ```
+
+---
