@@ -119,7 +119,7 @@ Servo myservo1;  // create servo object to control servo
 Servo myservo2;
 ...
 ```
-Now we're ready to go. The `NewPing` library contains a command that will ping way more efficiently than `pingIn`, and will do so reliably. This command, `ping_in`, will virtually replace all instances of `pingIn` to make our code faster and more efficiently.
+Now we're ready to go. The `NewPing` library contains a command that will ping way more efficiently than `pingIn`, and will do so reliably. This command, `ping_in`, will virtually replace all instances of `pingIn` to make our code run faster and more efficiently.
 
 Our new code will look like this:
 ```c++
