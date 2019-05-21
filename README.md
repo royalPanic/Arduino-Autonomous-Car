@@ -1,5 +1,5 @@
 # Arduino Autonomous Car Project
-###### By [royal_Panic](https://github.com/royalPanic), Samarah DeChane, & [Paige Patz](https://github.com/StardustBot).
+###### By ![royal_Panic](https://www.codewars.com/users/royalPanic/badges/small), Samarah DeChane, & [Paige Patz](https://github.com/StardustBot).
 ---
 ## Introduction:
 This project was made for the NJSHS STEM class, and is designed to help young people learn about programming with Arduino and how computer components interact. It uses several different components and enough code to help people grasp some of the basics of C/C++.
@@ -8,7 +8,7 @@ This project was made for the NJSHS STEM class, and is designed to help young pe
 * A computer with the Arduino IDE (v1.8.5+).
 * An Arduino UNO board.
 * An Arduino "Smart Car" kit, we used [this one](https://www.amazon.com/gp/product/B07F6Z38WM).
-* A stepper-motor controller, we used [this one](https://www.amazon.com/gp/product/B01H6VMEFY).
+* A `L298N` stepper-motor controller, we used [this one](https://www.amazon.com/gp/product/B01H6VMEFY).
 * An ultrasonic sensor, a good one is a generic `HC-SR04` sensor.
 
 ## Assembly of the Kit:
@@ -34,6 +34,9 @@ It should be noted that we're not actually using a stepper motor in this project
 
 ### Generic DC Motor (x4)
 There's really nothing very special or notable about these, negative to negative, positive to positive, apply power, and it spins. We're going to wire all of them up to run off of a single dual motor controller.
+
+## Wiring Diagram:
+![Wiring Diagram](https://github.com/royalPanic/Arduino-Autonomous-Car/blob/master/arduinocarwiring.png)
 
 ## Wiring Instructions:
 1. First, we're going to need to connect the motors to the motor controller. To do this, we'll need a soldering iron to make some heavier connections. The wires that were shipped with the kit are insulated threaded copper, which means it will be nearly impossible to strip them. We're going to connect a negative and positive wire from each of the ribbon cables to each of the motors on one side, then connect **both** red wires into one of the motor controller ports and **both** black wires into the other on the same side. We'll repeat this for the other set of motors on the other side of the car.
