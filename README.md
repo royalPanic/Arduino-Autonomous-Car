@@ -177,5 +177,9 @@ void loop() {
 }
 }
 ```
+## Contributing:
+**Want to contribute?**
+
+We firmly believe that open source software should stay open source forever, and that anyone should be able to contribute to it to make it better. As such, as long as Panic is around, he'll be reviewing any pull requests, and updating the project. As such, if you see something that can be improved in the project, ***do not hesitate to fork this repo, and make a pull request with your changes back to the master***. Changes and upgrades are how innovation happens, so go wild.
 
 ---
