@@ -40,8 +40,8 @@ There's really nothing very special or notable about these, negative to negative
 
 ## Wiring Instructions:
 1. First, we're going to need to connect the motors to the motor controller. To do this, we'll need a soldering iron to make some heavier connections. The wires that were shipped with the kit are insulated threaded copper, which means it will be nearly impossible to strip them. We're going to connect a negative and positive wire from each of the ribbon cables to each of the motors on one side, then connect **both** red wires into one of the motor controller ports and **both** black wires into the other on the same side. We'll repeat this for the other set of motors on the other side of the car.
-2. Now we'll see how the motor controller itself needs to be wired to the Arduino board.
-3. To wired the ultrasonic sensor to the Arduino board, we're going to need to keep track of its four pins. We have the **Trigger Pin**, **Echo Pin**, **Grounding Pin** and **5V Input Pin**.
+2. Now we'll see how the motor controller itself needs to be wired to the Arduino board. First we're going to give the controller its own power supply. We'll hook a batter pack up to its 5V and Ground terminals. We'll then connect the four motor inputs to the first four digital pins on the arduino.
+3. To wire the ultrasonic sensor to the Arduino board, we're going to need to keep track of its four pins. We have the **Trigger Pin**, **Echo Pin**, **Grounding Pin** and **5V Input Pin**. We'll start by connecting the Echo pin to digital pin 6 and the Trigger pin to digital pin 7. We'll then connect the VCC pin to the arduino's 5v output, and the Ground pin to the arduino's ground pin.
 
 ## Coding:
 The code is actually one of the simpler parts of the project, it's easy to make and update, and leaves some room for customization if you know your way around C.
@@ -49,8 +49,8 @@ The code is actually one of the simpler parts of the project, it's easy to make 
 ### The Basic Template:
 First, let's start with a simple template that will give basic functionality to the car.
 ```c++
-#define trigPin 12
-#define echoPin 13
+#define trigPin 7
+#define echoPin 6
 
 int n;
 int duration, distance;
@@ -133,8 +133,8 @@ Now we're ready to go. The `NewPing` library contains a command that will ping w
 
 Our new code will look like this:
 ```c++
-#define trigPin 12
-#define echoPin 13
+#define trigPin 7
+#define echoPin 6
 
 int n;
 int duration, distance;
