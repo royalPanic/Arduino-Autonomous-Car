@@ -127,7 +127,7 @@ Firstly, we're going to need to include the library in our code. Doing this is q
 String readString;
 
 #include <Servo.h>
-#include <NewPing.h> //add this library to increase functionality of the ultrasonic sensor
+#include <NewPing.h> // add this library to increase functionality of the ultrasonic sensor
 Servo myservo1;  // create servo object to control servo
 Servo myservo2;
 ...
