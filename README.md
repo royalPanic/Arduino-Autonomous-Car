@@ -9,7 +9,7 @@ This project was made for the NJSHS STEM class, and is designed to help young pe
 * An Arduino UNO board.
 * An Arduino "Smart Car" kit, we used [this one](https://www.amazon.com/gp/product/B07F6Z38WM).
 * A `L298N` stepper-motor controller, we used [this one](https://www.amazon.com/gp/product/B01H6VMEFY).
-* An ultrasonic sensor, a good one is a generic `HC-SR04` sensor.
+* An ultrasonic sensor, a good one is a generic `HC-SR04` sensor. You can get one from a trusted seller [here](https://www.adafruit.com/product/3942?gclid=CjwKCAjwiZnnBRBQEiwAcWKfYr9ymVUCjvo7Jid1eiym_gie3zviAb6XuVQ514xVnlMY2H0v86z2gRoCvfwQAvD_BwE).
 
 ## Assembly of the Kit:
 Now obviously this is going to vary by the type of kit you get, but I'll outline the process of building ours, step by step, as the instructions aren't the best.
