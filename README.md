@@ -16,9 +16,9 @@ Now obviously this is going to vary by the type of kit you get, but I'll outline
 1. Remove the protective paper from the chassis and fasteners.
 2. Insert 4 of the fasteners through the large slits bottom of the bottom chassis panel, making sure they stick all the way up.
 3. Place the motors on the inside of the fasteners (towards the center of the chassis) with the axles facing away from each other and parallel to the chassis make sure the holes are lined up.
-4. Add the remaining 4 fasteners to the indentations on the outside and push a bolt through each of the holes (from the outside) in the fasteners and motors using nuts to secure them in place.
+4. Add the remaining 4 fasteners to the indentations on the outside and push a screw through each of the holes (from the outside) in the fasteners and motors using nuts to secure them in place.
 5. Line the wheels up on the axles and push them on (they will click when they are secured).
-6. Using a screwdriver attach the metal spacers to the chassis on the corners an between the wheels, they are attached with a screw on each side.
+6. Using a screwdriver attach the metal spacers to the chassis on the corners and between the wheels, they are attached with a screw on each side.
 7. Place the second panel on top of the car and secure using more screws to the spacers.
 8. Flip over the entire chassis and secure the battery pack to the panel with screws and nuts.
 
@@ -100,13 +100,13 @@ Now, we can look further into how the code works in order to increase its functi
 
 ### Libraries:
 Let's start with *Libraries*:
-C Libraries are akin to Python Modules. They're extra sets of commands you can choose to import into your code in order to make other things work. If you've worked with Python at all, you can probably instantly recognize some of the most frequently used libraries, and how they're imported.
+C Libraries are akin to Python Modules. They're extra sets of commands you can choose to import into your code in order to make other things work. If you've worked with Python at all, you can probably instantly recognize some of the most frequently used modules, and how they're imported.
 
 ```Python
 import time
 import pygame
 import random as r #allows us to use 'r' in place of 'random'. For instance, `random.randint(1,10)` becomes `r.randint(1,10)`.
-from colorama import colorama #allows importing of select commands from a large module.
+from colorama import colorama #allows importing of select methods from a large module.
 ```
 
 C Libraries are remarkably similar, and are imported in a fairly similar fashion, actually. Here's an example of importing 3 libraries I use frequently.
