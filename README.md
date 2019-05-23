@@ -32,7 +32,10 @@ The Arduino UNO is a consumer microcontroller board that allows you to deploy co
 ### The Stepper Motor Controller:
 It should be noted that we're not actually using a stepper motor in this project, but we're going to make use of the the system by which this chip controls a bipolar stepper to instead make it control two DC motors. The only problem is that we have four. This is going to need some splicing of wires, but luckily the kit came with 2 2x2 cables, so we don't have to worry too too much about how to splice.
 
-### Generic DC Motor (x4)
+### HC-SR04 Ultrasonic Sensor:
+This is a standard ultrasonic sensor module, it uses the time between sending and receiving a pulse of sound to calculate the distance to an object. This sensor has a range of about 4 meters.
+
+### Generic DC Motor (x4):
 There's really nothing very special or notable about these, negative to negative, positive to positive, apply power, and it spins. We're going to wire all of them up to run off of a single dual motor controller.
 
 ## Wiring Diagram:
