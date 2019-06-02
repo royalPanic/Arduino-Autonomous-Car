@@ -1,3 +1,9 @@
+---
+
+# As a heads-up, royalPanic will no longer be maintaining this repository. Ownership has been transferred to Sam (Jadeflames8061) for her to do as she pleases with it. 
+
+---
+
 # Arduino Autonomous Car Project
 ###### By [royal_Panic](https://github.com/royalPanic), Samarah DeChane, & [Paige Patz](https://github.com/StardustBot).
 ---
